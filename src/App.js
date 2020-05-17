@@ -34,7 +34,7 @@ export default function App() {
         <Route exact path="/products">
           <Products />
         </Route>
-        <Route path="/product/:id" children={<ProductDetails />}></Route>
+        <Route path="/products/:id" children={<ProductDetails />}></Route>
         <Route path="*">
           <Error />
         </Route>
