@@ -12,9 +12,13 @@ import Login from "./pages/Login";
 import ProductDetails from "./pages/ProductDetails";
 import Products from "./pages/Products";
 
+//components
+import Header from "./components/Header";
+
 export default function App() {
   return (
     <Router>
+      <Header />
       <Switch>
         <Route exact path="/">
           <Home />

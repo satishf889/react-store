@@ -1,5 +1,38 @@
 import React from "react";
+import logo from "../assets/logo.svg";
+
+//to add links
+import { Link } from "react-router-dom";
 
 export default function Header() {
-  return <h1>hello from header</h1>;
+  return (
+    <header className="header">
+      <img src={logo} alt="Vintage tech logo" className="logo" />
+      <nav>
+        <ul>
+          <div>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+
+            <li>
+              <Link to="/products">Products</Link>
+            </li>
+          </div>
+          <div>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            <li>
+              <Link to="/cart">Cart</Link>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+  );
 }
